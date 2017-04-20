@@ -4,15 +4,11 @@ library(myvariant)
 library(VariantAnnotation)
 
 file.path <- system.file("extdata", "dbsnp_mini.vcf", package="myvariant")
-file.path <- system.file("extdata", "dbsnp_mini.vcf", package="myvariant")
-
-
 vcf <- readVcf(file.path, genome="hg38")
 class(vcf)
 vcf$rs14019410
-
-
 rowRanges(vcf)
+
 hgvs <- formatHgvs(vcf, variant_type="snp")
 hgvs
 

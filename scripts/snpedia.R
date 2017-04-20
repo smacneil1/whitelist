@@ -1,6 +1,7 @@
 source("https://bioconductor.org/biocLite.R")
 biocLite("SNPediaR")
 library(SNPediaR)
+
 pg <- getPages (titles = "Rs53576")
 pg
 View(pg)
